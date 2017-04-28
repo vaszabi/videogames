@@ -1,15 +1,8 @@
-package hu.wup.wuppadavans.entity;
+package hu.wup.wuppadavans.model;
 
-import javax.persistence.*;
 
-@Entity
-@Table(name = "videogames")
-public class GameEntity {
+public class Game {
 
-    public static final String ID_COLUMN_NAME = "gamesentity_id";
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = ID_COLUMN_NAME)
     private Long id;
     private String name;
     private String producer;

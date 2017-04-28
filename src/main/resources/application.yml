@@ -1,0 +1,23 @@
+#      springframework:
+#        web: DEBUG
+#      hibernate: DEBUG
+# HTTP Server
+server:
+  port: 8080   # HTTP (Tomcat) port
+# Spring properties
+spring:
+  application:
+     name: videogames
+  datasource:
+    url: jdbc:h2:~/data
+    driverClassName: org.h2.Driver
+    username: test
+    password: test
+  jpa:
+    generate-ddl: false
+    show-sql: true
+    properties:
+      hibernate.format_sql: true
+      hibernate.dialect: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
